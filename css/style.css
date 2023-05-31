@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url(//fonts.googleapis.com/css?family=Vibur);
+@import url(button.css);
+@import url(faq.css);
+
+body {
+    font-size: 1.25rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111927;
+    background-image:
+        radial-gradient(at 47% 33%, hsl(134.12, 84%, 7.000000000000001%) 0, transparent 59%),
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+    color: #ffff;
+}
+
+
+main,
+footer {
+    margin: auto;
+    margin-top: 2%;
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.titulo {
+    margin: 0 auto;
+    font-family: "Vibur";
+    font-size: 4rem;
+}
+
+
+.logo {
+    text-align: center;
+    width: 65%;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+}
+
+.titulo .neon {
+    font: 400 5rem "Vibur";
+    color: rgb(238, 255, 238);
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #54ff44, 0 0 0.5em #44ff54, 0 0 0.1em #54ff44, 0 10px 3px #000;
+}
+
+.titulo .neon span {
+    animation: blink linear infinite 2s;
+}
+
+.titulo .neon span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    79% {
+        color: #333;
+    }
+
+    80% {
+
+        text-shadow: none;
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+.intro-texto {
+    margin: 120px 0 32px 0;
+}
+
+.buttons {
+    padding-top: 40px;
+}
+
+article>p,
+.intro-texto>p {
+    max-width: 42rem;
+    margin: auto;
+}
+
+.nota {
+    color: rgba(90, 217, 40, 0.936);
+}
+
+.nota span {
+    color: rgba(235, 212, 10, 0.936);
+}
+
+.nota .nota-pequena,
+.nota .nota-pequena a {
+    margin: 0 auto;
+    font-size: 0.75rem;
+    max-width: 90ch;
+    color: rgb(146, 143, 143);
+}
+
+.button-ajuda {
+    margin-top: 10px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: rgb(251, 249, 249);
+}
+
+.tutorials {
+    margin: 18rem 0;
+}
+
+.tutorials .subtitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.tutorials .subtitulo h2 {
+    backdrop-filter: blur(16px) saturate(168%);
+    -webkit-backdrop-filter: blur(16px) saturate(168%);
+    background-color: rgba(17, 25, 40, 0.72);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    max-width: 800px;
+    padding: 10px 10%;
+}
+
+.tutorials>p {
+    margin: 2rem auto;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.video-responsive {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    max-width: 40rem;
+    padding-top: 56.25%;
+}
+
+.video-faq .video{
+    min-width: 120%;
+    padding-top: 0;
+}
+
+.credit {
+    font-size: 0.8rem;
+}
+
+footer {
+    font-size: 0.8rem;
+}
+
+@media (min-width:1400px) {
+    .video-responsive {
+        padding-top: 38%;
+    }
+}
+
+
+@media (max-width:1000px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .button-download {
+        margin-top: 40px;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .titulo .neon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:600px) {
+   
+    .intro-texto {
+        margin: 80px 0 32px 0;
+    }
+
+    .button {
+        font-size: 0.7rem;
+    }
+}
